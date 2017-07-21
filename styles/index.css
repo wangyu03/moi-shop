@@ -1,0 +1,127 @@
+html {
+  font-size: 15px;
+}
+@media screen and (min-width: 400px){
+  html{
+    font-size: 18px;
+  }
+}
+/***************header的内容*****************/
+header {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  max-width: 540px;
+  transform: translateX(-50%);
+  padding-right: 60px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  z-index: 999;
+}
+header .user {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 44px;
+}
+header .user a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  color: #2eaaea;
+  font-size: 12px;
+  text-indent: -999em;
+  font-weight: bold;
+  position: relative;
+}
+header .user a::before {
+  content:'';
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: url(../images/catergry.gif) no-repeat;
+  background-size: 23px 23px;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+header .soso_box {
+  width: 100%;
+  height: 24px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-shadow:0 1px 1px rgba(111,111,111,.8);
+  position: relative;
+  top: 8px;
+  background-color: #fff;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+header .soso_box::before {
+  content:'';
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: url(../images/icon_search.gif) no-repeat;
+  background-size: 13px 13px;
+}
+header .soso_box input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  position: relative;
+  top: -3px;
+}
+/********************底部newbuttonTab*********************/
+.newbuttonTab {
+  position: fixed;
+  width: 100%;
+  height: 46px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  z-index: 666;
+  max-width: 640px;
+  bottom: 0;
+}
+.newbuttonTab .tabL {
+  width: 25%;
+  height: 46px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+.newbuttonTab .tabL img{
+  border: none;
+  vertical-align: top;
+  width: 22px;
+  height: 20px;
+}
+.newbuttonTab .imgW {
+  display: inline-block;
+  width: 57px;
+  height: 46px;
+  padding: 8px 0;
+  font-size: 10px;
+}
+.newbuttonTab .tabL:nth-child(1) a{
+  color: #f00;
+}
+.newbuttonTab .imgW a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
